@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dreysmith.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/484f62dda6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hey, I am <span>Drey</span>.<br> Nice to meet you!</h1>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hey there, I'm Drey Smith! I'm all about data and computers, and I'm a total geek when 
+                        it comes to anything related to Data Science and Software Development. My main mission 
+                        is to use my skills and knowledge to be part of cool projects that make a real difference. 
+                        I'm always super curious about new technologies and I love diving into them to broaden my horizons. 
+                        Let's rock this tech world together!
+                    </p>
+
+                        <div class="tab-tables">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript, MySQL</li>
+                                <li><span>Programming</span><br>Python, Java, C++</li>
+                                <li><span>Database</span><br>MySQL, PostgreSQL, SQLite</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Freelance Development</span><br>Continuously aiding in the software expansion of local businesses (2022 - Current).</li>
+                                <li><span>Digital Marketing Manager</span><br>Provided a variety of digital marketing and eCom services to CMMCGC, a locally owned business in my area (2019, 2022).</li>
+                                <li><span>Student Information Technology Associate</span><br>Eastern New Mexico University (2022).</li>
+                                <li><span>Wells Fargo Bank</span><br>Experience in the professional communication in the financial/banking industry through experience at many diverse jobs, such as Wells Fargo Bank (You can download my CV to see my variety of other positions in detail).</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>New Mexico Connections Academy</span><br>H.S. diploma received at 16 in 2020.</li>
+                                <li><span>Eastern New Mexico Univesity</span><br>B.S. of Computer Science in December 2023</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!------------services---------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design and Development</h2>
+                        <p>Helping to elevate one's online presence with captivating designs and seamless functionality.</p>                    
+                        <a href="#contact">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-desktop"></i>
+                        <h2>Full Stack Application Development</h2>
+                        <p>Transforming ideas into seamless digital experiences by elevating organizations and individuals alike, with custom application design and development.</p>
+                        <a href="#contact">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Design and Architecture</h2>
+                        <p>Designing and developing well-thought-out and modern, responsive databases.</p>
+                        <a href="#contact">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------portfolio---------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Online Marketplace Website</h3>
+                            <p>The website served as a sales platform for a business marketing hand-made furniture.
+                                The website offers custom product-design features.
+                            </p>
+                            <a href="https://github.com/smithd36/woodworking-gallery-site"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Database Management System</h3>
+                            <p>This database is being actively used by a medical institution to track employee licensure.
+                                The application uses a database to manage employee info and comes with an email-bot to notify
+                                administration upon a nearing expiration date of any employee.
+                            </p>
+                            <a href="https://github.com/smithd36/medical-license-tracking-gui-system"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.jpg">
+                        <div class="layer">
+                            <h3>Web Scraping Tool</h3>
+                            <p>This tool was created to optimize family travel. It takes given entered information
+                                from the user and scrapes Bookings.com for the best deals on hotels based on ages and quantity of accompanying guests.
+                            </p>
+                            <a href="https://github.com/smithd36/node.js-optimized-travel-web-scraper-bot"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/smithd36" class="btn">My GitHub <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+        <!------------contact---------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Let's Get in Touch!</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>DreySmith101@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-phone-volume"></i>575-517-5364</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100082224745571"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/drey-smith-390245224/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="resources/ds_resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Send Message</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Drey Smith. Made with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+           for(tablink of tablinks){
+               tablink.classList.remove("active-link");
+           }
+           for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzvdAs4tF1v1BXLKcqepZe1lTv4R6iW9RrajZKqxPuRHWTdQWWxK5V-32p0IEEAjou9/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Successfully Delivered. I will be in touch soon!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 10000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+</body>
+</html>
